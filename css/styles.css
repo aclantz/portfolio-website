@@ -1,0 +1,198 @@
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #d2d7df;
+  --text-color: #3f4045;
+  --green-color: #6a8d73;
+  --blue-color: #5171a5;
+  --black-color: #02111b;
+  --primary-font-weight: 400;
+}
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: var(--primary-font-weight);
+    line-height: 1.1;
+    color: var(--text-color);
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+a {
+    color: var(--black-color);
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+  color: var(--blue-color);
+} 
+a:active {
+    color: var(--blue-color);
+  }
+button, .button {
+    border: none;
+    display:inline-block;
+    font-family: inherit;
+    background-color: var(--blue-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 1s;
+  }
+  button:hover, button:focus,
+  .button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+.profile__portrait {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+.page__footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.page-header__item {
+  flex: 0 1 200px;
+}
+.page-header__item:first-child {
+  width: 200px;
+  height: 60px;
+}
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.nav--list {
+  list-style-type: none;
+}
+.nav--list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.nav--list__item {
+  font-size: 16px;
+  transition: font-size 2s;
+}
+.nav--list__item:hover {
+  font-size: 20px;
+}
+.nav--list__item--active {
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.grid__item {
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px;
+}
+form {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 16px;
+}
+form, label {
+  grid-column: 1 / 2;
+}
+form, input {
+  grid-column: 2 / 3;
+}
+.email-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#attribution {
+  font-size: 8px;
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  }
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@keyframes color-change {
+  0% {
+    fill: #fcffad;
+  }
+  50% {
+    fill: #fde3e9;
+  }
+  100% {
+    fill: #fff;
+  }
+}
+.light {
+  animation: 8s color-change infinite alternate linear;
+}
+/*when i apply an animation the item disappears*/
+/*
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes star-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+.star-upper {
+  animation: 2s star-spin infinite;
+}
+.star-lower {
+  animation: 2s star-spin infinite;
+}
+*/
+
