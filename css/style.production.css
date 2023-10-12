@@ -119,9 +119,9 @@
   }
   .nav--list__item {
     font-size: 16px;
-    -webkit-transition: font-size 2s;
-    -o-transition: font-size 2s;
-    transition: font-size 2s;
+    -webkit-transition: font-size 0.8s;
+    -o-transition: font-size 0.8s;
+    transition: font-size 0.8s;
   }
   .nav--list__item:hover {
     font-size: 20px;
@@ -147,6 +147,9 @@
     -ms-grid-columns: 200px 16px 1fr;
     grid-template-columns: 200px 1fr;
     grid-gap: 16px;
+    border-style: solid;
+    border-width: 5px;
+    border: #6a8d73;
   }
   form, label {
     -ms-grid-column: 1;
@@ -170,6 +173,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #attribution {
+    font-size: 8px;
   }
   @media all and (max-width: 500px) {
     .grid {
@@ -221,7 +227,22 @@
     -webkit-animation: 8s color-change infinite alternate linear;
             animation: 8s color-change infinite alternate linear;
   }
-  /*when i apply an animation the item disappears*/
+  /* in progress...
+  @keyframes hover-color-change {
+    0% {
+      fill: var(--blue-color);
+    }
+    50% {
+      fill: var(--yellow-color);
+    }
+    100% {
+      fill: var(--green-color);
+    }
+  }
+  .hover {
+    animation: 0.8 hover-color-change 1 normal linear;
+  }*/
+  /*Not working with svg*/
   /*
   @keyframes cloud-move {
     from {

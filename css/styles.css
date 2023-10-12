@@ -8,6 +8,7 @@
   --green-color: #6a8d73;
   --blue-color: #5171a5;
   --black-color: #02111b;
+  --yellow-color: #fcffad;
   --primary-font-weight: 400;
 }
 body {
@@ -93,7 +94,7 @@ button, .button {
 }
 .nav--list__item {
   font-size: 16px;
-  transition: font-size 2s;
+  transition: font-size 0.8s;
 }
 .nav--list__item:hover {
   font-size: 20px;
@@ -158,7 +159,7 @@ form, input {
 }
 @keyframes color-change {
   0% {
-    fill: #fcffad;
+    fill: var(--yellow-color);
   }
   50% {
     fill: #fde3e9;
@@ -170,7 +171,22 @@ form, input {
 .light {
   animation: 8s color-change infinite alternate linear;
 }
-/*when i apply an animation the item disappears*/
+/* in progress...
+@keyframes hover-color-change {
+  0% {
+    fill: var(--blue-color);
+  }
+  50% {
+    fill: var(--yellow-color);
+  }
+  100% {
+    fill: var(--green-color);
+  }
+}
+.hover {
+  animation: 0.8 hover-color-change 1 normal linear;
+}*/
+/*Not working with svg*/
 /*
 @keyframes cloud-move {
   from {
