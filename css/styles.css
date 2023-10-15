@@ -4,7 +4,11 @@
 }
 :root {
   --bg-color: #d2d7df;
+  --bg-color-light: #e7e8e5;
   --text-color: #3f4045;
+  --red-color: #f03d5f;
+  --red-color-light: #f57797;
+  --teal-color: #33535f;
   --green-color: #6a8d73;
   --blue-color: #5171a5;
   --black-color: #02111b;
@@ -101,6 +105,23 @@ button, .button {
 }
 .nav--list__item--active {
   text-decoration: none;
+}
+table {
+  table-layout: auto;
+  padding: 15px;
+  /* border: 4px solid var(--blue-color); */
+  background-color: var(--bg-color-light);
+  border-radius: 10% 10%;
+}
+th {
+  /* border: 1px solid #5171a5; */
+  background-color: var(--bg-color);
+  padding: 5px;
+  border-radius: 10%;
+}
+td {
+  background-color: #d2d7df;
+  border-radius: 10%;
 }
 .grid {
   display: grid;
