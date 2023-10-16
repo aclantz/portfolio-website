@@ -113,6 +113,7 @@ button, .button {
 }
 table {
   table-layout: auto;
+  float: right;
   padding: 10px;
   background-color: var(--bg-color-light);
   border-radius: 20px;
