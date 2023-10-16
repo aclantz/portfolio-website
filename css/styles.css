@@ -34,7 +34,7 @@ a:hover, a:focus {
     color: white;
 }
 a:visited {
-  color: var(--blue-color);
+  color: var(--teal-color);
 } 
 a:active {
     color: var(--blue-color);
@@ -43,7 +43,7 @@ button, .button {
     border: none;
     display:inline-block;
     font-family: inherit;
-    background-color: var(--blue-color);
+    background-color: var(--teal-color);
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -69,14 +69,14 @@ button, .button {
   flex-direction: column;
   text-align: center;
 }
-.main__index {
-  max-width: 700px;
-  margin: 0 auto;
-}
 .main {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+.main__index {
+  max-width: 700px;
+  margin: 0 auto;
 }
 .page-header {
   display: flex;
@@ -116,20 +116,22 @@ table {
   padding: 10px;
   background-color: var(--bg-color-light);
   border-radius: 20px;
+  border: 3px solid var(--teal-color);
 }
 th {
   background-color: var(--bg-color);
   padding: 5px;
   border-radius: 10px;
+  text-decoration: underline;
 }
 td {
-  background-color: #d2d7df;
+  background-color: var(--bg-color);
   border-radius: 10px;
   text-align: center;
 }
 .grid {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
+  grid-template-columns: 350px 350px;
   grid-gap: 20px;
 }
 .grid__item {
@@ -137,6 +139,7 @@ td {
   padding: 10px;
   border-radius: 20px;
   text-align: center;
+  border: 3px solid var(--teal-color);
 }
 form {
   display: grid;
@@ -145,6 +148,7 @@ form {
   background-color: var(--bg-color-light);
   padding: 20px;
   border-radius: 20px;
+  border: 3px solid var(--teal-color);
 }
 form, label {
   grid-column: 1 / 2;
@@ -152,14 +156,11 @@ form, label {
 form, input {
   grid-column: 2 / 3;
 }
-.email-div {
-  /* margin-top: 20px; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-}
 #attribution {
   font-size: 8px;
+}
+#svg1 {
+  margin-top: 15px;
 }
 @media all and (max-width: 500px) {
   .grid {
@@ -197,16 +198,16 @@ form, input {
 .light {
   animation: 8s color-change infinite alternate linear;
 }
-/* in progress...
+/*
 @keyframes hover-color-change {
   0% {
-    fill: var(--blue-color);
+    color: var(--blue-color);
   }
   50% {
-    fill: var(--yellow-color);
+    color: var(--yellow-color);
   }
   100% {
-    fill: var(--green-color);
+    color: var(--green-color);
   }
 }
 .hover {
@@ -240,4 +241,3 @@ form, input {
   animation: 2s star-spin infinite;
 }
 */
-
